@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .btn {
+    @apply relative w-2/3 h-16 z-0 rounded-full bg-black shadow-2xl outline-none cursor-pointer border-none text-2xl text-gray font-dosis ease-in-out duration-300  hover:text-white hover:translate-y-2 hover:shadow-none max-sm:w-10/12
+    before:content-[''] before:bg-gradient-to-r from-hunter-green via-asparagus to-yellow-green before:absolute before:-top-0.5 before:-left-0.5 before:bg-cover before:-z-10 before:w-[calc(100%_+_8px)] before:h-[calc(100%_+_8px)] before:blur-sm before:rounded-full before:opacity-0 before:ease-in-out before:duration-300 before:hover:opacity-100
+    after:content-[''] after:-z-10 after:absolute after:w-full after:h-full after:bg-black after:left-0 after:top-0 after:rounded-full after:hover:bg-gradient-to-r from-hunter-green  via-asparagus  to-yellow-green  after:ease-in-out after:duration-300;
+  }
+
+  .input {
+    @apply border border-gray rounded-xl block w-full pr-2 pl-9 py-3 my-10 text-lg font-dosis
+    placeholder:text-gray focus:border-yellow-green focus:ring-yellow-green focus:outline-none focus:ring-2 focus:placeholder:text-yellow-green focus:text-yellow-green
+  }
+
+  .list {
+    @apply font-dosis py-10 border-t border-b border-gray text-xl mb-1 
+    hover:text-yellow-green hover:border-yellow-green
+    max-sm:py-5
+  }
+
+  .delete {
+    @apply float-end mx-10 px-10 border rounded bg-black text-gray outline-none ease-in-out duration-300 hover:!text-white hover:!bg-bittersweet-shimmer 
+  }
+
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+}
