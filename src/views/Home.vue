@@ -36,13 +36,14 @@ function deletetodo(id) {
     </template>
 
     <template class="flex justify-center w-1/3 items-end bg-parchment rounded-lg max-lg:w-full max-lg:h-1/6 max-lg:bg-opacity-0">
+      klhkslafa;ka;fla;
       <button class="btn my-20 flex items-center group max-lg:mb-12 max-lg:my-0" @click="addProduct(todo)">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
           viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 m-4 group-hover:animate-zoom">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
         </svg>
         <span class="flex w-2/3 justify-center">
-          Adddadwad
+          Add
         </span>
       </button>
     </template>
